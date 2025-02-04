@@ -11,8 +11,8 @@ on:
   workflow_dispatch:
     inputs:
       environment:
-      type: environment
-      required: true 
+        type: environment
+        required: true 
 
 jobs:
   Build:
@@ -50,7 +50,7 @@ jobs:
 
   Production: 
     runs-on: ubuntu-latest
-    need: [Test, Load-Test]
+    needs: [Load-Test, Test]
     environment: 
       name: Production
       url: https://writeabout.net
