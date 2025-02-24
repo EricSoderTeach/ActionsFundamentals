@@ -11,7 +11,7 @@ on:
     inputs:
       environment:
         type: environment
-        default: "Development"
+        default: "Test"
         required: true
         
 jobs:
