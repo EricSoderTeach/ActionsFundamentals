@@ -3,9 +3,9 @@ on:
   workflow_call:
     inputs:
       who-to-greet:
-      type: string
-      required: true
-      default: World
+        type: string
+        required: true
+        default: World
     outputs:
       current-time:
         description: 'Time when greeting'
