@@ -50,11 +50,11 @@ jobs:
   
   Production:
     runs-on: ubuntu-latest
-    if: github.event.inputs.environment == 'Production'
-    needs: [test,load-test]
+    needs: [test, load-test]
     environment:
-      url: https://writeabout.net
       name: Production
+      url: https://writeabout.net
+    if: github.event.inputs.environment == 'Production'
     steps:
       - run: |
           echo "🚀 Step 1..."
