@@ -48,7 +48,7 @@ jobs:
           echo "🧪 Testing..."
           sleep 15
   
-  production:
+  Production:
     runs-on: ubuntu-latest
     if: github.event.inputs.environment == 'Production'
     needs: [test,load-test]
