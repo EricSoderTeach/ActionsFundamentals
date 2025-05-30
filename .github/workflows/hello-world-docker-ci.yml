@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 
-        uses: action/checkout@5e6279cec87321a52edac9c87bce653a07cf6c2
+        uses: action/checkout@85e6279cec87321a52edac9c87bce653a07cf6c2
 
       - name: Run my own action 
         id: hello-action
